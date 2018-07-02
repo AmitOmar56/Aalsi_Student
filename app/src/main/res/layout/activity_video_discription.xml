@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context="com.example.user.aalsi_student.activity.VideoDiscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp">
+
+            </WebView>
+
+            <RelativeLayout
+                android:id="@+id/video_discription_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/webview">
+
+                <TextView
+                    android:id="@+id/follower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#47d147"
+                    android:padding="3dp"
+                    android:text="100"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_toLeftOf="@id/follower"-->
+                <!--android:background="#47d147"-->
+                <!--android:src="@drawable/follow" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/follower"
+                    android:padding="3dp"
+                    android:text="Follower"
+                    android:textColor="#181a18"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/price_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:padding="5dp"
+
+                    android:src="@drawable/rupee" />
+
+                <TextView
+                    android:id="@+id/video_disc_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price_sign"
+                    android:padding="5dp"
+                    android:text="1000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/video_disc_cutprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/video_disc_price"
+                    android:padding="5dp"
+                    android:text="12000"
+                    android:textSize="18sp" />
+
+                <RatingBar
+                    android:id="@+id/video_disc_RatingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_sign"
+                    android:layout_marginLeft="15dp"
+                    android:isIndicator="true"
+                    android:rating="3.5" />
+
+                <TextView
+                    android:id="@+id/video_disc_reting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_sign"
+                    android:layout_toRightOf="@+id/video_disc_RatingBar"
+                    android:padding="5dp"
+                    android:text="3.5"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_sign"
+                    android:layout_toRightOf="@+id/video_disc_reting_text"
+                    android:padding="5dp"
+                    android:text="(18,800)"
+                    android:textSize="15sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/video_buyNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/video_disc_RatingBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_border"
+                    android:onClick="buyNow"
+                    android:text="Buy Now"
+                    android:textColor="#cccccc" />
+
+
+                <TextView
+                    android:id="@+id/learn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/video_buyNow"
+                    android:padding="6dp"
+                    android:text="What will i learn ?"
+                    android:textColor="#E5131212"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/learnvideo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/video_discription_layout"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/sign_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/greentick" />
+
+                <TextView
+                    android:id="@+id/sign_image1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sign_image1"
+                    android:text="Create boilerplate starter projects with React, Redux, Express, and Mongo" />
+
+                <ImageView
+                    android:id="@+id/sign_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sign_image1_text"
+                    android:background="@drawable/greentick" />
+
+                <TextView
+                    android:id="@+id/sign_image2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sign_image1_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sign_image2"
+                    android:text="Create boilerplate starter projects with React, Redux, Express, and Mongo" />
+
+                <ImageView
+                    android:id="@+id/sign_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sign_image2_text"
+                    android:background="@drawable/greentick" />
+
+                <TextView
+                    android:id="@+id/sign_image3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sign_image2_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sign_image2"
+                    android:text="Create boilerplate starter projects with React, Redux, Express, and Mongo" />
+
+
+                <ImageView
+                    android:id="@+id/sign_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sign_image3_text"
+                    android:background="@drawable/greentick" />
+
+                <TextView
+                    android:id="@+id/sign_image4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sign_image3_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sign_image2"
+                    android:text="Create boilerplate starter projects with React, Redux, Express, and Mongo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/requirement_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/learnvideo_layout">
+
+                <TextView
+                    android:id="@+id/requirement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Requirements"
+                    android:textColor="#E5131212"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/requirement"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/requirment_dot1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blackdot2" />
+
+                    <TextView
+                        android:id="@+id/requirment_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/requirment_dot1"
+                        android:text="No pre-knowledge is required - enthusiasm is all you need!" />
+
+                    <ImageView
+                        android:id="@+id/requirment_dot2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/requirment_text1"
+                        android:background="@drawable/blackdot2" />
+
+                    <TextView
+                        android:id="@+id/requirment_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/requirment_text1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/requirment_dot2"
+                        android:text="A Mac, Windows, or Linux computer" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/discription_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/requirement_layout">
+
+                <TextView
+                    android:id="@+id/discription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Description"
+                    android:textColor="#E5131212"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/discription"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:elevation="6dp">
+
+                    <TextView
+                        android:id="@+id/course_disc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You’re here because you’re ready to start building professional, career-boosting websites.Or maybe you’re coding already and want to take things to the next level?I’m here because I’m the creator of the best-selling, highest-rated coding courses on Udemy—and I love to share my secrets with you." />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about_instructor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discription_layout">
+
+                <TextView
+                    android:id="@+id/instructor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="About the Instructor"
+                    android:textColor="#E5131212"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/instructor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/instructor_text"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="R.K. Verma"
+                    android:textColor="#e50d5179"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/instructor_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/instructor_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="Engineering Architect"
+                    android:textColor="#E5131212"
+                    android:textSize="15sp"
+
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/instructor_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/instructor_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/instructor_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/profile" />
+
+                    <RatingBar
+                        android:id="@+id/instructor_RatingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/instructor_image"
+                        android:layout_marginLeft="5dp"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:rating="3.5" />
+
+                    <TextView
+                        android:id="@+id/student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/instructor_RatingBar"
+                        android:padding="5dp"
+                        android:text="Students"
+                        android:textColor="#E5131212"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/instructor_RatingBar"
+                        android:layout_toRightOf="@+id/student"
+                        android:padding="5dp"
+                        android:text="(3000)" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/instructor_discription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/instructor_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="6dp"
+                    android:text="Stephen Grider has been building complex Javascript front for top corporations in the San Francisco Bay Area. With an innate ability to simplify complex topics, Stephen has been mentoring engineers beginning their careers in software development for years, and has now expanded that experience onto Udemy, authoring the highest rated React course. He teaches on Udemy to share the knowledge he has gained with other software engineers. Invest in yourself by learning from Stephen's published courses." />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relatedVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_instructor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Related Video"
+                    android:textColor="#eb060606"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/instructor_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/relatedVideo">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

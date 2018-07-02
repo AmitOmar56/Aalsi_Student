@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:id="@+id/ratingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/rateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="Rate My App"
+                android:textColor="#FF1A2797"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratebar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rateText"
+                android:layout_centerHorizontal="true"
+                android:rating="3.5" />
+
+            <Button
+                android:id="@+id/rateusButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratebar"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_border"
+                android:text="rate us"
+                android:textColor="@color/colorbackground" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rateoptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
+                    android:padding="7dp"
+                    android:text="quality" />
+
+                <TextView
+                    android:id="@+id/teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/quality"
+                    android:background="@drawable/border"
+                    android:padding="7dp"
+                    android:text="teacher" />
+
+                <TextView
+                    android:id="@+id/course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/teacher"
+                    android:background="@drawable/border"
+                    android:padding="7dp"
+                    android:text="course" />
+
+                <RelativeLayout
+                    android:id="@+id/optionlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/teacher"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/border"
+                        android:padding="7dp"
+                        android:text="subject" />
+
+                    <TextView
+                        android:id="@+id/online"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/subject"
+                        android:background="@drawable/border"
+                        android:padding="7dp"
+                        android:text="online" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/optionNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/optionlayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/button_border"
+                    android:text="@string/next"
+                    android:textColor="@color/colorbackground"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/thankyouText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            android:text="Thank you....."
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/smily"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/thankyouText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/thankyouButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thankyouText"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_border"
+            android:text="Ok"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

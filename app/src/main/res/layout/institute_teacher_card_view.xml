@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/institute_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/institute_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/institute_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                 />
+
+            <TextView
+                android:id="@+id/institute_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="4.3"
+                android:padding="3dp"
+                android:textColor="@android:color/white"
+                android:background="#47d147"/>
+            <TextView
+                android:id="@+id/follower"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="14dp"
+                android:text="100"
+                android:padding="3dp"
+                android:textColor="@android:color/white"
+                android:background="#47d147"
+                android:layout_alignParentRight="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/follow"
+               android:layout_toLeftOf="@id/follower"
+                android:background="#47d147"/>
+
+            <ImageView
+                android:id="@+id/institute_overflow"
+                android:layout_width="@dimen/ic_album_overflow_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/institute_thumbnail"
+                android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+                android:scaleType="centerCrop"
+                 />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

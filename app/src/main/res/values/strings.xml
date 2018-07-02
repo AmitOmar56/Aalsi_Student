@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Aalsi_Student</string>
+    <string name="title_activity_main__screen">Main_ScreenActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location_access_denied">LOCATION ACCESS DENIED</string>
+
+    <string name="gps_settings_disabled">GPS SETTINGS DISABLED</string>
+
+
+    <string name="choose_yes_on_dialog">
+    You must have to accept changes on Location settings to get your current location.
+    </string>
+    <!-- Now fill address manually or select any place on map.-->
+    <string name="location_denied_marsh">You must have to allow this app to access device\'s location to get your current location. If you check "Never ask again", give permission to your app in app settings manually.</string>
+    <string name="device_not_supported">This device does not have Google Play Services</string>
+    <string name="conference_class_details">Conference Class Details</string>
+    <string name="no_of_students">No.Of Students</string>
+    <string name="offline_class_details">Offline Class Details</string>
+    <string name="name_error">please enter name</string>
+    <string name="password_error">enter password</string>
+    <string name="please_fill_all_required_field">please fill all require field</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_valid_email">enter valid email</string>
+    <string name="Phone_error">enter phone number</string>
+    <string name="Phone_length_validation">enter valid number</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="next">Next</string>
+    <string name="loading">loading</string>
+    <string name="facebook_app_id">383936798693499</string>
+    <string name="fb_login_protocol_scheme">fb1065828690183627</string>
+    <string name="welcome">welcome</string>
+    <string name="cancel_login">cancel_login</string>
+    <string name="error_login">error_login</string>
+    <string name="logout">logout</string>
+</resources>

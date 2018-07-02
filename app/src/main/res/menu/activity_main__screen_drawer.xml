@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_admission"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Admission" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/my_acc"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet_icon"
+            android:title="Wallet"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart_icon"
+            android:title="Cart"/>
+        <item
+            android:id="@+id/nav_change_passwod"
+            android:icon="@drawable/courses"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

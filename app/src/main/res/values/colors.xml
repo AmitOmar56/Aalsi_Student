@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#Ed3237</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorbackground">#E6E7E8</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="contentColor">#ffffff</color>
+    <color name="my_buttomtext_color">#595353</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_black_light">#FF1F1F1F</color>
+    <color name="Gray">#808080</color>
+</resources>

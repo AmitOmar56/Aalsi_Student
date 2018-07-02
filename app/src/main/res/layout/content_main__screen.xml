@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.aalsi_student.activity.Main_ScreenActivity"
+    tools:showIn="@layout/app_bar_main__screen">
+
+    <RelativeLayout
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainScreen_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/horizontal_recyclerView"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/exploreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainScreen_recycler_view">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/dashboardRGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-8dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/dashboardMyOrderRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_news"
+            android:gravity="center"
+            android:onClick="course"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="courses"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/dashboardMyCarRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_explore"
+            android:gravity="center"
+            android:onClick="notification"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="notification"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/dashboardHistoryRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_offer"
+            android:gravity="center"
+            android:onClick="job"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="Admission"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/dashboardMoreRButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_reg_header_bg"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homescreen_my_feed"
+            android:gravity="center"
+            android:onClick="video"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="Video"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RadioGroup>
+</RelativeLayout>

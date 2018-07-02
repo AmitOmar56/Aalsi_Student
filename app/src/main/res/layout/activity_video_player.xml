@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorbackground"
+    tools:context="com.example.user.aalsi_student.activity.VideoPlayerActivity">
+
+    <FrameLayout
+        android:id="@+id/video_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/black">
+
+        <com.universalvideoview.UniversalVideoView
+            android:id="@+id/videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            app:uvv_autoRotation="true"
+            app:uvv_fitXY="false" />
+
+        <com.universalvideoview.UniversalMediaController
+            android:id="@+id/media_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:uvv_scalable="true" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/prevImage"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@color/uvv_gray"-->
+        <!--android:src="@drawable/profile" />-->
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/start_video"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/play_button_new" />-->
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.like.LikeButton
+                android:id="@+id/star_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:anim_scale_factor="2"
+                app:circle_end_color="@color/colorAccent"
+                app:circle_start_color="@color/colorPrimary"
+                app:dots_primary_color="@color/colorAccent"
+                app:dots_secondary_color="@color/colorPrimary"
+                app:icon_size="25dp"
+                app:icon_type="heart"
+                app:like_drawable="@drawable/heart_on"
+                app:unlike_drawable="@drawable/heart_off" />
+
+            <TextView
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/star_button"
+                android:layout_marginLeft="10dp"
+                android:text="100"
+                android:textColor="#e5a10e1f"
+                android:textSize="15sp" />
+            <!--android:textStyle="bold" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/start"-->
+            <!--android:layout_width="160dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="#FF3EE13E"-->
+            <!--android:text="play"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="18dp" />-->
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/uvv_gray"
+            android:gravity="center"
+            android:text="this is video introduciton ......" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

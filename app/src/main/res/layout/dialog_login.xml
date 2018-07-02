@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorbackground"
+    >
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="OTP"
+        android:textColor="#FF9933CC"
+        android:textSize="25sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otp_login1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="1">
+        <AutoCompleteTextView
+            android:id="@+id/otp_login"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="45dp"
+            android:hint="Enter Number"
+            android:inputType="textPassword"
+            android:maxLength="4" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#79a209df"
+            android:onClick="login1"
+            android:text="login"
+            android:textColor="#cccccc" />
+
+        <Button
+            android:id="@+id/btn_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#79a209df"
+            android:text="Resend"
+            android:textColor="#cccccc" />
+    </LinearLayout>
+</LinearLayout>
